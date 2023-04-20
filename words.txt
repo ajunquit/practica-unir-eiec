@@ -1,0 +1,15 @@
+repositorio
+github
+unir
+asignatura
+trabajo
+lenguaje
+garaje
+despertador
+armario
+plaza
+manzana
+pera
+banana
+kiwi
+hola
