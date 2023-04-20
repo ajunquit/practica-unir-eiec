@@ -49,7 +49,8 @@ if __name__ == "__main__":
         word_list = []
         with open(file_path, "r") as file:
             for line in file:
-                word_list.append(line.strip())
+            #agregamos la funcion capitalize para poner la primera letra de cada palabra en mayuscula
+            word_list.append(line.strip().capitalize())
     else:
         print(f"El fichero {filename} no existe")
         word_list = ["ravenclaw", "gryffindor", "slytherin", "hufflepuff"]
