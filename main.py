@@ -22,6 +22,9 @@ def sort_list(items, ascending=True):
 def remove_duplicates_from_list(items):
     return list(set(items))
 
+def es_palindromo(palabra):
+    palabra_invertida = palabra[::-1]
+    return palabra == palabra_invertida
 
 """
 este bloque e codigo verific sise han proporcionado dos argumentos al script, 
@@ -59,3 +62,8 @@ if __name__ == "__main__":
         word_list = remove_duplicates_from_list(word_list)
 #se imprime la lista ordenada de palabras
     print(sort_list(word_list))
+
+    for palabra in word_list:
+        if es_palindromo(palabra):
+            print(f"{palabra} es un palíndromo")
+
