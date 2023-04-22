@@ -20,6 +20,9 @@ def sort_list(items, ascending=True):
 def remove_duplicates_from_list(items):
     return list(set(items))
 
+def es_palindromo(palabra):
+    palabra_invertida = palabra[::-1]
+    return palabra == palabra_invertida
 
 if __name__ == "__main__":
     filename = DEFAULT_FILENAME
@@ -47,3 +50,8 @@ if __name__ == "__main__":
         word_list = remove_duplicates_from_list(word_list)
 
     print(sort_list(word_list))
+
+    for palabra in word_list:
+        if es_palindromo(palabra):
+            print(f"{palabra} es un palíndromo")
+
